@@ -21,19 +21,19 @@ typedef enum {
 // Determines where badge is placed
 @property MLTBadgePlacement placement;
 // The numeric value to display on the badge
-@property NSInteger badgeValue;
+@property (nonatomic, assign) NSInteger badgeValue;
 // The font for the badge number
-@property(nonatomic, retain) UIFont *font;
+@property(nonatomic, strong) UIFont *font;
 // The interior color of the badge
-@property(nonatomic, retain) UIColor *badgeColor;
+@property(nonatomic, strong) UIColor *badgeColor;
 // The color for badge text
-@property(nonatomic, retain) UIColor *textColor;
+@property(nonatomic, strong) UIColor *textColor;
 // The outline color for the badge
-@property(nonatomic, retain) UIColor *outlineColor;
+@property(nonatomic, strong) UIColor *outlineColor;
 // The width of the outline around the badge
 @property float outlineWidth;
 // Force the badge to a minimum size
-@property float minimumDiameter;
+@property (nonatomic, assign) CGFloat minimumDiameter;
 // Show the badge no matter what
 @property BOOL displayWhenZero;
 @end
